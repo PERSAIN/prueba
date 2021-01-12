@@ -34,23 +34,23 @@ function App() {
        <Navbar></Navbar> 
        <Switch>
        
-        { token ?
-        <div>
+      
+        
         <Route exact path= "/home/roles" component={Roles}></Route>
         <Route exact path= "/home/solicitante" component={HomeSolicitante}></Route>
         <Route exact path= "/tablecitas" component={TableCitas}></Route>  
         <Route exact path= "/home/prestador" component={HomePrestador}></Route>   
-        </div>
-
-        :
         
-        <div>
+
+      
+      
+        
         <Route exact path= "/home" component={Home}></Route>
         <Route exact path= "/signin" component={SignIn}></Route>
         <Route exact path= "/signup" component={SignUp}></Route>
-        </div>
         
-        }
+        
+    
              
        </Switch>
       </Router>
